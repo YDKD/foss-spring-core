@@ -1,0 +1,15 @@
+mybatis:
+  mapper-locations: classpath:mappers/*xml
+  type-aliases-package: com.example.fossspringcore.mybatis.entity
+spring:
+  config:
+    name: ${configName}
+    location: classpath:config/
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${mysqlHost}:${mysqlPort}/${mysqlDatabase}?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: ${mysqlUsername}
+    password: ${mysqlPassword}
+
+server:
+  port: 6061
