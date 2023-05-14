@@ -5,7 +5,7 @@
 
     <groupId>io.github.ydkd</groupId>
     <artifactId>foss-spring-core</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <name>foss-spring-core</name>
     <url>https://github.com/YDKD/foss-spring-core.git</url>
@@ -34,6 +34,8 @@
         <url>git@github.com:YDKD/foss-spring-core.git</url>
     </scm>
 
+
+    <!--  nexus 仓库  -->
     <distributionManagement>
         <snapshotRepository>
             <id>sonatype</id>
@@ -44,6 +46,18 @@
             <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
     </distributionManagement>
+
+    <!-- 阿里云所有仓库 -->
+    <!--    <distributionManagement>-->
+    <!--        &lt;!&ndash;        <repository>&ndash;&gt;-->
+    <!--        &lt;!&ndash;            <id>sonatype</id>&ndash;&gt;-->
+    <!--        &lt;!&ndash;            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>&ndash;&gt;-->
+    <!--        &lt;!&ndash;        </repository>&ndash;&gt;-->
+    <!--        <repository>-->
+    <!--            <id>rdc-releases</id>-->
+    <!--            <url>https://packages.aliyun.com/maven/repository/2375872-release-8cFgnb/</url>-->
+    <!--        </repository>-->
+    <!--    </distributionManagement>-->
 
     <properties>
         <java.version>17</java.version>
